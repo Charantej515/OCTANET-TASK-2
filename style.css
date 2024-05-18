@@ -1,0 +1,47 @@
+body {
+  font-family: Times New Roman;
+  background-color:powderblue;
+}
+header {
+  padding: 10px 20px;
+  background-color:red; 
+}
+#todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  background-color:solid-black; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.todo-item.completed {
+  opacity: 0.7; /* Lower opacity for completed tasks */
+  text-decoration: line-through; 
+}
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+.todo-item p {
+  flex: 1;
+  margin: 0;
+}
+#add-task-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 20%;
+  background-color:green; 
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
